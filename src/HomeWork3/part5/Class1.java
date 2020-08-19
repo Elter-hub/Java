@@ -1,10 +1,14 @@
 package HomeWork3.part5;
 
+import lombok.NoArgsConstructor;
+
 import java.util.ArrayList;
 
 import static HomeWork3.part5.Class2.getIntegers;
 
+@NoArgsConstructor
 class Class1 implements Creator {
+
     int length;
     final int to = 200;  //
 
