@@ -8,11 +8,9 @@ public class Pet {
 
     @Override
     public String toString() {
-        return "Pet = " +
-                "width=" + width +
-                ", height=" + height +
-                ", age=" + age +
-                ", name='" + name + '\'';
+        return "Pet " +
+                ", age " + age +
+                ", name '" + name;
     }
 
     public Pet(int width, int height, int age, String name) {
