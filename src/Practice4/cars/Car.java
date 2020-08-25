@@ -1,6 +1,5 @@
 package Practice4.cars;
 
-import java.text.SimpleDateFormat;
 import java.util.Objects;
 
 public class Car {

@@ -1,5 +1,6 @@
 package Practice3.part2;
 
+import Practice3.part1.Square;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -12,11 +13,5 @@ public class Artist implements Singer {
         System.out.println("La👨‍🎤 la👩‍🎤 ▶ 🎧");
     }
 
-    public static void main(String[] args) {
-        ArrayList<Singer> artists = new ArrayList<>();
-        for (int i = 0; i < 5; i++){
-            artists.add(new Artist());
-        }
-        artists.forEach(Singer::sing);
-    }
+    Square square = new Square(20);
 }

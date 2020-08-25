@@ -44,35 +44,38 @@ public class Main {
         computers.add(hp3);
         computers.add(hp4);
 
+
 /*1*/   List<Computer> olderThan10 = computers .stream()
                 .filter(year -> year.year > 2010)
                 .collect(Collectors.toList());
-        System.out.println(olderThan10.size());
+//        System.out.println(olderThan10.size());
 
 /*2*/   List<Computer> olderThan10China = computers.stream()
                 .filter(comp -> comp.year > 2010 && comp.hard.country == Country.CHINA)
                 .collect(Collectors.toList());
-        System.out.println(olderThan10China.size());
+//        System.out.println(olderThan10China.size());
 
 /*3*/   List<Computer> olderThan10NotChina = computers.stream()
                 .filter(comp -> comp.year > 2010 && comp.hard.country != Country.CHINA)
                 .collect(Collectors.toList());
-        System.out.println(olderThan10NotChina.size());
+//        System.out.println(olderThan10NotChina.size());
 
 /*4*/   List<Computer> hard500 = computers.stream()
                 .filter(comp -> comp.hard.capacity > 500)
                 .collect(Collectors.toList());
-        System.out.println(hard500.size());
+//        System.out.println(hard500.size());
 
 /*5*/   List<Computer> hard500i7 = computers.stream()
             .filter(comp -> comp.hard.capacity > 500 && comp.proc.typeOfProcessor.contains("i7"))
             .collect(Collectors.toList());
-        System.out.println(hard500i7);
+//        System.out.println(hard500i7);
 
 /*6*/   List<Computer> sortedHard500i7 = computers.stream()
                 .filter(comp -> comp.hard.capacity > 500 && comp.proc.typeOfProcessor.contains("i7"))
                 .sorted(Comparator.comparing(comp -> comp.price))
                 .collect(Collectors.toList());
-        System.out.println(sortedHard500i7);
+//        System.out.println(sortedHard500i7);
+
+        computers.stream().map(m -> m.hard.country.getCountry()).forEach(System.out::println);
     }
 }

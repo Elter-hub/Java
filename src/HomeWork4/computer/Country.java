@@ -11,4 +11,8 @@ public enum Country {
         this.country = country;
     }
     String country;
+
+    public String getCountry() {
+        return country;
+    }
 }

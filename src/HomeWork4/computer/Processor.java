@@ -6,7 +6,7 @@ import java.util.Objects;
 
 @Data
 public class Processor {
-    String typeOfProcessor;
+    String  typeOfProcessor;
     int quantityOfCores;
     double frequency;
     Country madeIn;
