@@ -1,4 +1,4 @@
-package Practice4;
+package Practice4.zooclub;
 
 import java.util.*;
 

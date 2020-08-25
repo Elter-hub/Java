@@ -1,4 +1,4 @@
-package Practice4;
+package Practice4.zooclub;
 
 public class Person {
     private String name;

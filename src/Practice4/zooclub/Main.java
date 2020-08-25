@@ -1,9 +1,8 @@
-package Practice4;
+package Practice4.zooclub;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,8 +43,6 @@ public class Main {
         removePerson(zooClub1, "ivan");
         System.out.println("__________________");
         showMap(zooClub1);
-
-
     }
 
     static void addPerson(ZooClub club, Person person){
