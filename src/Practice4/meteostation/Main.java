@@ -17,12 +17,12 @@ public class Main {
         meteoStation.addObserver(serhiy);
         meteoStation.addObserver(ivan);
 
-        meteoStation.predicate(weather);
+        meteoStation.changeWeather(weather);
 
         Scanner scanner = new Scanner(System.in);
         weather = scanner.nextLine();
 
-        meteoStation.predicate(weather);
+        meteoStation.changeWeather(weather);
 
         meteoStation.removeObserver(ivan);
     }

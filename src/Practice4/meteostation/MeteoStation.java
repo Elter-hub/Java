@@ -8,7 +8,7 @@ public class MeteoStation extends java.util.Observable  {
     public String weather;
     private final List<Observer> peoples = new ArrayList<>();
 
-    public void predicate(String newCondition){
+    public void changeWeather(String newCondition){
         this.weather = newCondition;
         notifyObservers();
     }
